@@ -1,0 +1,55 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #ef7722;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #f8ec12aa;
+  border-radius: 2px;
+  border-radius: 12px;
+  color: #fa670c;
+}
+
+.nav .active {
+  color: #fff200;
+  border-bottom: #fff200 2px solid;
+}
+
+/* hero */
+.content {
+  background-color: white;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+img {
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.hero-text {
+  max-width: 600px;
+  padding-top: 60px;
+  margin-top: 40px;
+}
