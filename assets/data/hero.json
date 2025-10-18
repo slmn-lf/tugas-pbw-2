@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Welcome  to our team's portfolio.",
+    "description": "This Project presents the implementation of our Web-Based Programming assignment..",
+    "image": "assets/img/hero.png"
+  },
+  {
+    "title": "Innovative Web Gallery: A Showcase of Digital Creative Projects",
+    "description": "Discover inspiration and see how ideas are transformed into stunning web experiences.",
+    "image": "assets/img/team2.png"
+  },
+  {
+    "title": "Connect & Create: Conversations in the Digital Space",
+    "description": "Join the discussion on new technologies, creative processes, and the future of the web. Your go-to source for fresh perspectives.",
+    "image": "assets/img/team3.png"
+  }
+]
