@@ -1,4 +1,3 @@
-// js/main.js
 import { HeroCarousel } from "./hero.js";
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,4 +1,3 @@
-// js/hero.js
 export class HeroCarousel {
   constructor(jsonPath, elements) {
     this.jsonPath = jsonPath;
@@ -32,7 +31,6 @@ export class HeroCarousel {
     const descEl = document.querySelector(this.elements.desc);
     const imgEl = document.querySelector(this.elements.img);
 
-    // Efek fade
     imgEl.style.opacity = 0;
     setTimeout(() => {
       titleEl.textContent = title;
