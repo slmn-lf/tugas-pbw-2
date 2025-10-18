@@ -1,108 +1,136 @@
+/* Normalize css base */
 body {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
+/*  Navbar  */
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
   background-color: #ef7722;
-  overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+
+  z-index: 1000; /* save content */
 }
+
 .nav a {
   color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
+
+.nav a i {
+  display: none;
+}
+
 .nav a:hover {
   background-color: #f8ec12aa;
-  border-radius: 2px;
   border-radius: 12px;
   color: #fa670c;
 }
 
 .nav .active {
   color: #fff200;
-  border-bottom: #fff200 2px solid;
+  border-bottom: 2px solid #fff200;
 }
 
-/* hero */
 .content {
   background-color: white;
   text-align: left;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  align-items: flex-start;
+  padding: 100px 20px 40px; /* save content */
   border-radius: 0 0 20px 20px;
-}
-img {
-  width: 600px;
-  height: auto;
-  padding: 20px;
-  border-radius: 40px;
 }
 
 .hero-text {
   max-width: 600px;
-  padding-top: 60px;
+  padding-top: 20px;
   margin-top: 40px;
 }
 
-/* Responsive: Versi handphone */
+img {
+  width: 600px;
+  height: auto;
+  margin-left: 20px;
+  border-radius: 40px;
+  border: 2px solid #000000;
+}
+
+/* mobille version */
 @media (max-width: 768px) {
   .nav {
-    align-items: stretch;
-    gap: 0;
-  }
-  .nav a {
-    padding: 12px 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    top: auto;
+    bottom: 0;
+    height: 55px;
+    justify-content: space-around;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
   }
 
+  .nav a i {
+    display: block;
+    font-size: 20px;
+  }
+
+  .nav span {
+    display: none;
+  }
   .content {
     flex-direction: column;
-    padding: 16px;
-    gap: 8px;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
   }
 
   img {
     width: 100%;
     max-width: 480px;
-    padding: 12px;
     border-radius: 20px;
   }
 
   .hero-text {
-    padding-top: 24px;
+    padding-top: 12px;
     margin-top: 0;
     max-width: 100%;
+    text-align: center;
   }
 }
 
 @media (max-width: 420px) {
   .nav {
-    padding: 6px 8px;
+    height: 50px;
+    padding: 0 6px;
   }
+
   .nav a {
-    padding: 10px 12px;
-    font-size: 14px;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .content {
+    padding: 16px 12px 70px;
   }
 
   img {
     width: 100%;
-    max-width: 100%;
-    padding: 8px;
     border-radius: 16px;
   }
 
   .hero-text {
-    padding-top: 12px;
     font-size: 15px;
   }
 }
