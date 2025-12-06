@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/project.css" />
-    <link rel="stylesheet" href="/assets/css/blog.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/style/project.css" />
+    <link rel="stylesheet" href="/style/blog.css" />
+    <link rel="stylesheet" href="/style/style.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +23,25 @@
   <body>
     <!-- navbar -->
     <div class="nav">
-      <a class="active" href="#home">
-        <i class="material-icons">home</i> <span>Home</span>
-      </a>
-      <a href="#blog">
-        <i class="material-icons">auto_stories</i> <span>Blogs</span>
-      </a>
-      <a href="#project">
-        <i class="material-icons">work</i> <span>Projects</span>
-      </a>
-      <a href="#contact">
-        <i class="material-icons">call</i> <span>Contact</span>
-      </a>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a class="active" href="#">
+          <i class="material-icons">home</i> <span>Home</span>
+        </a>
+        <a href="#blog">
+          <i class="material-icons">auto_stories</i> <span>Blogs</span>
+        </a>
+        <a href="#projects">
+          <i class="material-icons">work</i> <span>Projects</span>
+        </a>
+        <a href="#contact">
+          <i class="material-icons">call</i> <span>Contact</span>
+        </a>
+      </div>
     </div>
     <!-- content -->
 
