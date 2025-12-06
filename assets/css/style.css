@@ -153,6 +153,20 @@ body {
   transform: scale(1.05);
 }
 
+
+/* blog */
+.blog h2
+{
+color: #000000;
+background-color: #fa670c;
+
+}
+.blog-title
+{
+display: flex;
+justify-content: left;
+
+}
 /* mobille version */
 @media (max-width: 768px) {
   .nav {
